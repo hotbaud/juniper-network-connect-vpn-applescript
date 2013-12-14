@@ -2,7 +2,7 @@
 
 -- Juniper Network Connect manipulation script
 -- Author: Sean Fisk
--- Adapted for Juniper Network Connect 7.3.4 (24309) by Anne Marie Merritt (amerritt@vmware.com)
+-- Adapted for Juniper Network Connect 7.3.4 (24309) by Anne Marie Merritt
 -- References:
 -- * <http://scdidadm.tumblr.com/post/5579178924/juniper-network-connect-applescript-start-stop>
 -- * <http://hintsforums.macworld.com/showthread.php?t=99264>

@@ -6,6 +6,8 @@
 -- References:
 -- * <http://scdidadm.tumblr.com/post/5579178924/juniper-network-connect-applescript-start-stop>
 -- * <http://hintsforums.macworld.com/showthread.php?t=99264>
+-- * <http://www.logicinmind.com/en/support/enable-gui-scripting-mac/index.html> (Enable UI Scripting)
+-- * <http://support.apple.com/kb/HT5914?viewlocale=en_US> Apple technote
 
 -- Usage: juniper gatewayHostName username password
 
@@ -43,15 +45,15 @@ on run argv
                 else
                         connect to gatewayHostName
                         delay 5
-						tell application "System Events"
-						-- FIXME:  Could do a version check here and perform the relevant text field references for the given version.
-							set value of text field 1 of group 8 of UI element 1 of scroll area 1 of window appName of application process appName to username
-							set value of text field 1 of group 11 of UI element 1 of scroll area 1 of window appName of application process appName to pw
-							click button "Sign In" of group 15 of UI element 1 of scroll area 1 of window appName of application process appName
+			tell application "System Events"
+				-- FIXME:  Could do a version check here and perform the relevant text field references for the given version.
+				set value of text field 1 of group 8 of UI element 1 of scroll area 1 of window appName of application process appName to username
+				set value of text field 1 of group 11 of UI element 1 of scroll area 1 of window appName of application process appName to pw
+				click button "Sign In" of group 15 of UI element 1 of scroll area 1 of window appName of application process appName
 				
-							-- AppleScript prints the last object that's returned. We don't want it to print the button that it fetched, so just return nothing.
-							return
-						end tell
+				-- AppleScript prints the last object that's returned. We don't want it to print the button that it fetched, so just return nothing.
+				return
+			end tell
                 end if
         end tell
 end run

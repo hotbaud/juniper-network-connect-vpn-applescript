@@ -1,7 +1,7 @@
 # Automated Juniper Network Connect VPN AppleScript
 
 
-This is a script that will assist you in automating your VPN connection using Network Connect by [Juniper Networks][juniper].  It has been tested on Juniper Networks Network Connect 7.3.4 (24309).
+This is a script that will assist you in automating your VPN connection using Network Connect by [Juniper Networks][juniper].  It has been tested on Juniper Networks Network Connect 7.3.4 (24309) for Mac, on 10.6.8 (Snow Leopard), 10.8.5 (Mountain Lion), and 10.9.1 (Mavericks).
 
 [juniper]: http://www.juniper.net
 
